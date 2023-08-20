@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+}
+html,body{
+    height: 100%;
+}
+div{
+
+    box-sizing: border-box;
+}
+#pageGenFormat{
+    /*Split the initial page into 2 for
+      - picture
+      - actual form
+    */
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#imageBox{
+    flex: 0 0 300px;
+}
+
+#rightBox{
+    flex: 1 1 0%;
+    flex-direction: column;
+}
+
+#rightBox div{
+    flex: 1 1 0%;
+    height: calc(100%/3);
+}
+
+#description{
+    padding: 50px 50px 20px 30px;
+    /*BUG: This is throwing things off*/
+}
+
+td{
+    padding-right: 50px;
+}
+
+#formBox{
+    padding: 20px 0px 20px 30px;
+    box-shadow: 0px 0px 10px 0px lightgray;
+
+}
+
+input{
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+}
+input:invalid{
+    border: 1px solid rgb(209, 52, 52);
+}
+input:valid{
+    border: 1px solid rgb(52, 209, 52);
+}
+
+#submitButton{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: green;
+    font-size: 16px;
+    color: white;
+}
+
+
+#logIn{
+    color: green;
+    text-decoration : none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
